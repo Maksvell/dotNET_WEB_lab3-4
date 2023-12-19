@@ -10,7 +10,7 @@ public class BaseRepository<T>(NewsSiteContext context) : IRepository<T> where T
 
     public async Task<T> GetById(int id)
     {
-        return await _context.Set<T>().FindAsync(id);
+        return await _context.Set<T>().FindAsync(id) ?? throw new NullReferenceException();
     }
 
     public async Task<IEnumerable<T>> GetAll()
@@ -34,5 +34,10 @@ public class BaseRepository<T>(NewsSiteContext context) : IRepository<T> where T
     {
         _context.Entry(entity).State = EntityState.Modified;
         await _context.SaveChangesAsync();
+    }
+
+    protected IQueryable<T> ApplyFilter(IQueryable<T> query)
+    {
+        return query;
     }
 }

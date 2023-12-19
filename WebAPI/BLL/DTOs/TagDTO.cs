@@ -1,4 +1,4 @@
-﻿namespace BLL.DTO;
+﻿namespace BLL.DTOs;
 
 public class TagDTO : BaseDTO
 {

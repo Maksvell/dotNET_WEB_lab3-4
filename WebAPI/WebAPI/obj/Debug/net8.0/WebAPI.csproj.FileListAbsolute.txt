@@ -275,3 +275,7 @@ E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\obj\Debug\net8.0\refint\W
 E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\obj\Debug\net8.0\WebAPI.pdb
 E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll
+E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\bin\Debug\net8.0\AutoMapper.dll
+E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\bin\Debug\net8.0\BLL.dll
+E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\bin\Debug\net8.0\BLL.pdb

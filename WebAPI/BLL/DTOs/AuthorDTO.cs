@@ -1,4 +1,6 @@
-﻿namespace BLL.DTO;
+﻿using DAL.Entities;
+
+namespace BLL.DTOs;
 
 public class AuthorDTO : BaseDTO
 {

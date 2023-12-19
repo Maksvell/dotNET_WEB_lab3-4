@@ -9,4 +9,7 @@ namespace DAL.Interfaces;
 
 public interface INewsWithTagRepository : IRepository<NewsWithTag>
 {
+    IEnumerable<NewsWithTag> GetByNewsId(int id);
+    IEnumerable<NewsWithTag> GetByTagId(int id);
+
 }
