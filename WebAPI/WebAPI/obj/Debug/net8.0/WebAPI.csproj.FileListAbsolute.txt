@@ -279,3 +279,5 @@ E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\bin\Debug\net8.0\AutoMapp
 E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\bin\Debug\net8.0\BLL.dll
 E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\bin\Debug\net8.0\BLL.pdb
+E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\bin\Debug\net8.0\FluentValidation.dll
+E:\kpi\.NET_web\lab3-4\dotNET_WEB_lab3-4\WebAPI\WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

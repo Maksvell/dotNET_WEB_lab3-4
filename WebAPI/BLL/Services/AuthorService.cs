@@ -28,14 +28,19 @@ public class AuthorService(IUnitOfWork unit, IMapper mapper) : BaseSevice<Author
 
     public async Task Add(AuthorDTO entity)
     {
-        _validator.ValidateAndThrow(entity);
+        _validator.Validate(entity);
 
         var author = _mapper.Map<Author>(entity);
-        
-        //auth
+        if (await CheckIfRegistered(entity.Email)) throw new Exception("Email is already in use");
 
         await _unit.AuthorRepository.Add(author);
         await _unit.SaveChangesAsync();
+    }
+
+    public async Task<bool> CheckIfRegistered(string email)
+    {
+        var collection = await _unit.AuthorRepository.GetAll();
+        return collection.Any(x => x.Email.Equals(email));
     }
 
     public async Task Delete(int id)
@@ -47,13 +52,13 @@ public class AuthorService(IUnitOfWork unit, IMapper mapper) : BaseSevice<Author
 
     public async Task Update(int id, AuthorDTO entity)
     {
-        _validator.ValidateAndThrow(entity);
+        _validator.Validate(entity);
 
         var author = await _unit.AuthorRepository.GetById(id) ?? throw new NullReferenceException();
 
         author.Name = entity.Name;
         author.Email = entity.Email;
-        author.Password = entity.Password; //hashing?
+        author.Password = entity.Password;
         
         await _unit.AuthorRepository.Update(author);
         await _unit.SaveChangesAsync();
